@@ -1,18 +1,17 @@
 /* -------------------Font_Awesome--------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
-
-
 .container{
-    font-family: 'Poppins', sans-serif;
-    background-color: #2D25A0;
+ 
     height: 677px;
     width: 100%;
+    background-color: #2D25A0;
+    font-family: 'Poppins', sans-serif;
     
    
 }
-    
 
 
 /* -----------------------
@@ -210,21 +209,25 @@
 }
 
 
-/* ----------------------------
-         Official-Partners------------
-         ------------------------------------ */
+/* ------------------------------------------
+    Official-Partners------------
+         ----------------------------------------------------------------- */
+
+
 #Ofiicail-partners{
-    
+
     margin-bottom: 158px;
 }
 
 #partners{
+
     width: 1050px;
     height: 474px;
     margin-left: 220px;
+    
 }
 
-#partners h1{
+#Ofiicail-partners h1{
     text-align: center;
 }
 
@@ -239,13 +242,15 @@
       Footer_part------------------
 ---------------------------------------------- */
 
-footer{
+.footer-section{
     width: 483.87px;
     height: 213px;
     
     margin-left: 475px;
     margin-right: 481.13px;
-    margin-bottom: 63px;
+    margin-bottom: 63px; 
+   
+  
 }
 
 .footer-images{
@@ -254,7 +259,9 @@ footer{
 }
 
 .footer-images img{
-    width: 100%;
+   height: 100%;
+   width: 100%;
+  
 }
 
 .footer-icons{
@@ -300,12 +307,47 @@ footer{
    .menu-bar{
        width: 100%;
    }
-   .photo-gallary, .highlights {
+   .photo-gallary, .highlights{
        grid-template-columns: repeat(1,1fr);
        display: grid;
        justify-content: center;
        align-content: center;
    }
+
+   #partners{
+    width: 328px;
+    height: 240px;
+    margin-left: 0px;
+   }
+
+   #partners img{
+      width: 100%;
+      height: 100%;
+   }
+
+
+
+   .footer-section{
+       width: 280px;
+       height: 90px;
+       align-items: center;
+       margin-left: -90px;
+       margin-top: -120px;
+   }
+
+   .footer-icons{
+
+       width: 100%;
+       height: 100%;
+       
+   }
+
+   .footer-images{
+       height: 100%;
+       width: 100%;
+       margin-left: 80px;
+   }
+
 
    .photo-frame{
     align-items: center;
@@ -344,5 +386,8 @@ footer{
     height: 248px;
    }
 
+
+
+    
 
 }
