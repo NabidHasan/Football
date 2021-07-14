@@ -4,11 +4,13 @@
 
 
 
-header{
+.container{
     font-family: 'Poppins', sans-serif;
     background-color: #2D25A0;
-    width: 1440px;
     height: 677px;
+    width: 100%;
+    
+   
 }
     
 
@@ -54,24 +56,26 @@ header{
 .banner-container{
   display: flex;
   margin-right: 184.99px;
-    margin-left: 156px;
+  margin-left: 156px;
 }
 
-.banner-image img{
-    
+.banner-image{
     width: 556.01px;
     height: 438px;
     margin-bottom: 86px;
 }
+.banner-image img{
+    width: 100%;
+}
 
 
 .banner-title{
-    
-    font-style: normal;
+
     font-size: 64px;
     margin-bottom: 22px;
     color: #FFFFFF;
 }
+
 
 
 .link-button{
@@ -85,3 +89,145 @@ header{
 .link-button i{
     padding-left: 8px;
 }
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------
+--------------------------------------------Players_Gallary-----------
+-----------------------------------------------------------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.photo-gallary{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    margin-left:180px;
+    margin-right:210px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+    
+
+}
+
+.photo-frame{
+   
+    padding: 15px;
+    width: 330px;
+    height: 474px;
+    box-shadow: 5px 5px 8px grey;
+}
+
+.image img{
+    width: 100%;
+    height: 256px;
+}
+
+.photo-details{
+    width: 300px;
+    height: 154px;
+}
+
+.photo-details h1{
+    font-size: 28px;
+}
+
+.photo-details p{
+    font-size: 16px;
+    
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!----------------------------------------
+----------------------------------------Highlights-Section------
+--------------------------------------------------------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.highlights{
+    margin-left: 182px;
+    margin-right: 156px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.highlights-details{
+    width: 469px;
+    height: 309px;
+}
+
+.highlights-details h1{
+    font-size: 48px;
+    margin-bottom: 0px;
+ 
+    
+}
+
+.highlights-details p{
+    width: 350px;
+    margin-top: 8px;
+    font-size: 16px;
+    margin-bottom: 34px;
+}
+
+.highlights-image{
+    width: 567px;
+    height: 427px;
+}
+
+.highlights-image img{
+    width: 100%;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-------------
+---------------------------------------Media_Screen_Section-------
+----------------------------------------------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media only screen and (max-width:688px) {
+   .container{
+       height: 100%;
+       width: 100%;
+   }
+    
+   .menu-bar{
+       width: 100%;
+   }
+   .photo-gallary, .highlights {
+       grid-template-columns: repeat(1,1fr);
+    
+   }
+
+   .banner-title{
+       font-size: 36px;
+   }
+
+   .banner-image{
+       margin-top: 50px;
+    width: 329px;
+    height: 259.17px;
+   }
+
+    .menu{
+        display: none;
+    }
+   
+   .banner-container {
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .highlights-details{
+    width: 329px;
+    height: 299px
+   }
+
+   .highlights-details h1{
+       font-size: 30px;
+   }
+
+   .highlights-image{
+    width: 328px;
+    height: 248px;
+   }
+  
+
+  }
